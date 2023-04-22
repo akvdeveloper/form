@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Send through Email js</title>
+    <link rel="stylesheet" href="./index.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("d5t0QXpNxVUa0Ezy0");
+        })();
+    </script>
+</head>
+<body>
+    <div class="main">
+        <h2>Contact Us for further Details.</h2>
+        <input id="fullName" type="text" placeholder="Full Name" required> <br>
+        <input id="email_id" type="email" placeholder="Email Id" required> <br>
+        <textarea id="message" placeholder="Message" required></textarea> <br>
+        <button onclick="SendMail()">Send</button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
